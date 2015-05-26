@@ -1,0 +1,1 @@
+%systemroot%\system32\WindowsPowershell\v1.0\Powershell.exe -executionpolicy bypass -file "\\10.144.107.17\vLAB\DC-Builder.ps1" -NetworkNumber 3
