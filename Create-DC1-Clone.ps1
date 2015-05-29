@@ -19,7 +19,8 @@ Write-Host "Moving $vmname to $NetworkName"
 Get-VM $vmname |Get-NetworkAdapter|Set-NetworkAdapter -NetworkName $NetworkName  -confirm:$false 
 
 Write-Host "Setting memory and customization spec on $vmname"
-Get-VM $vmname | Set-VM -MemoryMB 2048 -OSCustomizationSpec $vmspec -Confirm:$false
+Get-VM $vmname | Set-VM -MemoryMB 2048 
+#-OSCustomizationSpec $vmspec -Confirm:$false
 
 
 Write-Host "Starting VM $vmname"
